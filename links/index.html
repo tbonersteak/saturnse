@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #2c2c2c; /* Fallback color */
+        }
+
+        .version-text {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: white;
+            opacity: 0.7;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #111111, #505050);
+            background-size: 300% 300%; /* Set the size of the gradient */
+            animation: gradientAnimation 10s linear infinite; /* Animation properties */
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        .navigation {
+            flex: 1;
+            text-align: center;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .navigation ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navigation ul li:last-child {
+            margin-right: 0;
+        }
+
+        .navigation ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navigation ul li a:hover {
+            color: #d4eaff;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        @keyframes gradientAnimation {
+            0%, 100% {
+                background-position: 0% 0%;
+            }
+            25% {
+                background-position: 100% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            75% {
+                background-position: 0% 100%;
+            }
+        }
+
+        /* Custom styles for the header text */
+        .header-text {
+            font-family: 'Exo 2', sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #111111, #505050);
+            background-size: 300% 300%; /* Set the size of the gradient */
+            animation: gradientAnimation 10s linear infinite; /* Animation properties */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .header-text h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .header-text p {
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        /* Styles for the Links section */
+        .links {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #111111, #505050);
+            background-size: 300% 300%; /* Set the size of the gradient */
+            animation: gradientAnimation 10s linear infinite; /* Animation properties */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .links h2 {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin-bottom: 5px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #d4eaff;
+        }
+
+        .my-button {
+    background: linear-gradient(135deg, #111111, #505050);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #d4eaff;
+    color: #111111;
+}
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon link -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet"> <!-- Google Fonts link -->
+    <title>Saturn's Student Portal</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../links/index.html">Links</a></li>
+                    <li><a href="../games/index.html">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="links">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://chartreuse-green-fox-ring.cyclic.app">Art Class (1)</a></li>
+            <li><a href="https://ccmathematics.ddns.net/app">Doge (1)</a></li>
+    </ul>
+            <!-- Add more links here -->
+        </ul>
+    </div>
+    <div class="version-text">Version 0.1</div>
+</body>
+</html>
